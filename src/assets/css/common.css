@@ -82,8 +82,8 @@ input:-webkit-autofill {
 body {
   font-size: 14px;
   line-height: 1.4;
-  color: #3c3c3c;
+  color: #333;
   font-family: Helvetica, 'Pingfang SC', 'Microsoft YaHei', STHeiti, Verdana,
     Arial, Tahoma, sans-serif;
-  background-color: #fff;
+  background-color: #f9f9f9;
 }

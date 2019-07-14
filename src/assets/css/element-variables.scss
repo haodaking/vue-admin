@@ -1,0 +1,57 @@
+/*
+
+https://github.com/ElemeFE/element/blob/dev/packages/theme-chalk/src/common/var.scss
+
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+$--color-primary: #179bff;
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+/* Border
+-------------------------- */
+$--border-radius-base: 0px !default;
+
+/* MessageBox
+-------------------------- */
+$--msgbox-border-radius: 8px !default;
+.el-message-box {
+  .el-button {
+    border: 0;
+    border-radius: 20px;
+  }
+  .el-button--default {
+    background-color: #f1f1f1;
+  }
+  .el-button--primary {
+    background-color: #66b1ff;
+  }
+}
+
+/* Dialog
+-------------------------- */
+.el-dialog.is-fullscreen {
+  border-radius: 0 !important;
+}
+.el-dialog {
+  border-radius: 8px !important;
+  .el-dialog__title {
+    font-weight: bold;
+  }
+  .el-dialog__subtitle {
+    margin-left: 12px;
+    font-size: 14px;
+    color: #999;
+  }
+  .el-button {
+    border: 0;
+  }
+  .el-button--default {
+    background-color: #f1f1f1;
+  }
+}
+$--dialog-box-shadow: 0px 0px 15px 0px rgba(1, 102, 178, 0.3) !default;
+
+@import '~element-ui/packages/theme-chalk/src/index';

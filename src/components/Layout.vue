@@ -1,5 +1,5 @@
 <template>
-  <section class="main-layout">
+  <section class="main-layout" :class="className">
     <layout-aside />
     <layout-container>
       <!-- 头部 -->
@@ -20,7 +20,18 @@ import LayoutMain from './Layout/Main'
 
 export default {
   name: 'Layout',
-  components: { LayoutAside, LayoutContainer, LayoutHeader, LayoutMain }
+  components: { LayoutAside, LayoutContainer, LayoutHeader, LayoutMain },
+  computed: {
+    collapse() {
+      return this.$store.state.menuCollapse
+    },
+    className() {
+      return {
+        // 'has-sidebar': this.hasSidebar,
+        'sidebar-collapse': this.collapse
+      }
+    }
+  }
 }
 </script>
 

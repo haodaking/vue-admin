@@ -15,5 +15,11 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes: [...account, ...system, ...company, ...user]
+  routes: [
+    { path: '/', redirect: '/system' },
+    ...account,
+    ...system,
+    ...company,
+    ...user
+  ]
 })
