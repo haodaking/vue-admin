@@ -60,8 +60,8 @@ export default {
           name: '成员管理',
           icon: 'el-icon-user',
           children: [
-            { id: '3-1', name: '成员管理', path: '/user' },
-            { id: '3-2', name: '角色管理', path: '/user/roles' }
+            { id: '3-1', name: '成员管理', path: '/member' },
+            { id: '3-2', name: '角色管理', path: '/member/roles' }
           ]
         }
       ]

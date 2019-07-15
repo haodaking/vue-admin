@@ -7,8 +7,8 @@ import account from './modules/account/router.js'
 import system from './modules/system/router.js'
 // 公司
 import company from './modules/company/router.js'
-// 用户
-import user from './modules/user/router.js'
+// 成员
+import member from './modules/member/router.js'
 
 Vue.use(Router)
 
@@ -20,6 +20,6 @@ export default new Router({
     ...account,
     ...system,
     ...company,
-    ...user
+    ...member
   ]
 })
